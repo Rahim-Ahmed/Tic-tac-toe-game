@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="logo">
+        <img src="asset/logo2.png" alt="null">    
+        </div>
+        <div class="heading">
+            <p>Course: CSE366 [AI project]</p>
+            <p>Title: Tic Tac Toe game using Minimax and Alpha-Beta Pruning algorithm</p>
+            
+        </div>
+
+        <p class="game-info" id="wmeg">Welcome To the Tic-Tac-Toe game&#128519;!!</p>
+        <div class="tic-tac-toe">
+
+            <div class="diff">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty" onchange="changeDifficulty()">
+                  <option value="easy">Easy</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+            </div>
+            
+
+            <table id="board">
+                <tr>
+                    <td class="cell" onclick="makeMove(this, 0)"></td>
+                    <td class="cell" onclick="makeMove(this, 1)"></td>
+                    <td class="cell" onclick="makeMove(this, 2)"></td>
+                </tr>
+                <tr>
+                    <td class="cell" onclick="makeMove(this, 3)"></td>
+                    <td class="cell" onclick="makeMove(this, 4)"></td>
+                    <td class="cell" onclick="makeMove(this, 5)"></td>
+                </tr>
+                <tr>
+                    <td class="cell" onclick="makeMove(this, 6)"></td>
+                    <td class="cell" onclick="makeMove(this, 7)"></td>
+                    <td class="cell" onclick="makeMove(this, 8)"></td>
+                </tr>
+            </table>
+        </div>
+       
+        
+        <button class="btn" onclick="resetGame()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
