@@ -1,4 +1,4 @@
-# Tic-tac-toe-game
+# Tic-tac-toe-game with difficulty level
 **deployed at:** https://tic-tac-toe-95d1b.web.app/
 
 In a Tic-Tac-Toe game with Minimax and Alpha-Beta Pruning, the computer player aims to make optimal moves by considering all possible future moves and their outcomes. Minimax is a decision-making algorithm that is widely used in two-player turn-based games like Tic-Tac-Toe.
